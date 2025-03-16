@@ -13,6 +13,7 @@ export class EmployeeModel {
     this.city = '';
     this.contactNo = '';
     this.emailId = '';
+    this.empId= 0;
     this.name = '';
     this.state = '';
     this.pinCode = '';

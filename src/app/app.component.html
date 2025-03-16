@@ -5,80 +5,78 @@
         <h6>Employee List</h6>
       </div>
 
-      <div class="card-body">
-        <div class="row">
-          <div class="col-12">
-            <table class="table table-bordered">
-              <thead>
-                <tr>
-                  <th>Sr No</th>
-                  <th>Name</th>
-                  <th>Contact No</th>
-                  <th>Email Id</th>
-                </tr>
-              </thead>
-              <tbody>
+    <div class="card-body">
+    <div class="row">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Sr No</th>
+              <th>Name</th>
+              <th>Contact No</th>
+              <th>Email-Id</th>
+            </tr>
+          </thead>
+          <tbody>
 
-              </tbody>
-            </table>
-          </div>
-        </div>
+          </tbody>
+        </table>
       </div>
     </div>
-  </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-4">
+      <div class="card">
+        <div class="card-header bg-success">
+          New Employee
+        </div>
 
-  <div class="col-4">
-    <div class="card">
-      <div class="card-header bg-sucess">
-        New Employee
-      </div>
-      <div class="card-body">
-        <form [formGroup]="employeeForm">
-          <div class="row">
-            <div class="col-12">
-              <label for="">Name</label>
-              <input type="text" formControl="name" class="form-control">
+        <div class="card-body">
+          <form [formGroup]="employeeForm">
+            <div class="row">
+              <div class="col-12">
+                <label for="">Name</label>
+                <input type="text" formControlName="name" class="form-control">
+              </div>
+              <div class="col-6">
+                <label for="">Email-Id</label>
+                <input type="text" formControlName="emailId" class="form-control">
+              </div>
+              <div class="col-6">
+                <label for="">Contact No</label>
+                <input type="text" formControlName="contactNo" class="form-control">
+              </div>
+              <div class="col-6">
+                <label for="">City</label>
+                <input type="text" formControlName="city" class="form-control">
+              </div>
+              <div class="col-6">
+                <label for="">State</label>
+                <input type="text" formControlName="state" class="form-control">
+              </div>
+              <div class="col-6">
+                <label for="">Pin Code</label>
+                <input type="text" formControlName="pinCode" class="form-control">
+              </div>
+              <div class="col-12">
+                <label for="">Address</label>
+                <textarea formControlName="address" class="form-control"></textarea>
+              </div>
             </div>
-            <div class="col-6">
-              <label for="">Email Id</label>
-              <input type="text" formControl="emailId"  class="form-control">
-            </div>
-            <div class="col-6">
-              <label for="">Contact Number</label>
-              <input type="text" formControl="contactNo"  class="form-control">
-            </div>
-            <div class="col-6">
-              <label for="">City</label>
-              <input type="text" formControl="city"  class="form-control">
-            </div>
-            <div class="col-6">
-              <label for="">State</label>
-              <input type="text" formControl="state"  class="form-control">
-            </div>
-            <div class="col-6">
-              <label for="">Pin Code</label>
-              <input type="text" formControl="pinCode"  class="form-control">
-            </div>
-            <div class="col-12">
-              <label for="">Address</label>
-              <textarea form-controlName="address" class="form-control"></textarea>
-            </div>
-          </div>
   
-          <div class="row pt-2">
-            <div class="col-6 text-center">
-              <button class="btn btn-secondary">Reset</button>
+            <div class="row pt-2">
+              <div class="col-6 text-center">
+                <button class="btn btn-secondary">Reset</button>
+              </div>
+  
+              <div class="col-6 text-center">
+                <button class="btn btn-success">Save Employee</button>
+              </div> 
             </div>
-            <div class="col-6 text-center">
-              <button class="btn btn-success">Save Employee</button>
-            </div>
-          </div>
+
+          </form>
+          
         </div>
-
-        </form>
-        <!-- <form [formGroup]="employeeForm"></form> -->
-        
-
+      </div>
     </div>
-  </div>
-</div>
