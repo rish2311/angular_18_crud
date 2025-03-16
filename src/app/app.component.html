@@ -33,46 +33,52 @@
         New Employee
       </div>
       <div class="card-body">
-        <div class="row">
-          <div class="col-12">
-            <label for="">Name</label>
-            <input type="text" class="form-control">
+        <form [formGroup]="employeeForm">
+          <div class="row">
+            <div class="col-12">
+              <label for="">Name</label>
+              <input type="text" formControl="name" class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="">Email Id</label>
+              <input type="text" formControl="emailId"  class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="">Contact Number</label>
+              <input type="text" formControl="contactNo"  class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="">City</label>
+              <input type="text" formControl="city"  class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="">State</label>
+              <input type="text" formControl="state"  class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="">Pin Code</label>
+              <input type="text" formControl="pinCode"  class="form-control">
+            </div>
+            <div class="col-12">
+              <label for="">Address</label>
+              <textarea form-controlName="address" class="form-control"></textarea>
+            </div>
           </div>
-          <div class="col-6">
-            <label for="">Email Id</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-6">
-            <label for="">Contact Number</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-6">
-            <label for="">City</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-6">
-            <label for="">State</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-6">
-            <label for="">Pin Code</label>
-            <input type="text" class="form-control">
-          </div>
-          <div class="col-12">
-            <label for="">Address</label>
-            <textarea class="form-control"></textarea>
+  
+          <div class="row pt-2">
+            <div class="col-6 text-center">
+              <button class="btn btn-secondary">Reset</button>
+            </div>
+            <div class="col-6 text-center">
+              <button class="btn btn-success">Save Employee</button>
+            </div>
           </div>
         </div>
 
-        <div class="row pt-2">
-          <div class="col-6 text-center">
-            <button class="btn btn-secondary">Reset</button>
-          </div>
-          <div class="col-6 text-center">
-            <button class="btn btn-success">Save Employee</button>
-          </div>
-        </div>
-      </div>
+        </form>
+        <!-- <form [formGroup]="employeeForm"></form> -->
+        
+
     </div>
   </div>
 </div>
